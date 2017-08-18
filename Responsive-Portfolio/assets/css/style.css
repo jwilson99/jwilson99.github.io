@@ -135,7 +135,6 @@ input[type=submit] {
 .connectContent {
     color: #4aaaa5;
     background-color: #ffffff;
-    width: 170px;
     float: left;
     padding: 20px;
     margin-left: 30px;
@@ -145,6 +144,7 @@ input[type=submit] {
     border-color: #dddddd;
     font-size: 15pt;
     text-align: center;
+    min-width: 230px;
 }
 
 /*sets icon dimensions*/
@@ -174,8 +174,8 @@ input[type=submit] {
     padding-bottom: 20px;
     width: 100%;
     position: fixed;
-    bottom: 0px;
-    left: 0px;
+    bottom: 0;
+    left: 0;
     z-index: 10;
 }
 
