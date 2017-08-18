@@ -1,0 +1,424 @@
+* {
+    box-sizing: border-box;
+}
+
+/*used to keep the divs under control*/
+.clearFix:after {
+    content: " "; /* Older browser do not support empty content */
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+/*the main header is the top bar of the page*/
+.mainHeader {
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #cccccc;
+    border-width: 1px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/*contains the title, aka my name*/
+.innerHeader {
+    background-color: #4aaaa5;
+    color: white;
+    width: 205px;
+    height: 60px;
+    padding: 15px 10px 10px 10px;
+    font-size: 20pt;
+    margin-left: 100px;
+    text-align: center;
+    float: left;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-weight: bold;
+}
+
+.aboutHeader {
+    float: left;
+    margin: 20px 10px 10px 350px;
+    border-right: 1px solid #dddddd;
+    padding-right: 10px;
+}
+
+.portfolioHeader {
+    float: left;
+    margin: 20px 10px 10px 10px;
+    border-right: 1px solid #dddddd;
+    padding-right: 10px;
+}
+
+.contactHeader {
+    float: left;
+    margin: 20px 10px 10px 10px;
+}
+
+/*contains the main content and largest section of the page*/
+.mainContent {
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #dddddd;
+    border-width: 1px;
+    width: 500px;
+    float: left;
+    padding: 20px;
+    margin-left: 100px;
+    margin-bottom: 70px;
+    clear: both;
+    line-height: 150%;
+}
+
+/*formats the contact form area*/
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dddddd;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+/*creates a larger message box for the contact form*/
+textarea {
+    height: 200px;
+}
+
+/*makes place-holder text a set color*/
+::-webkit-input-placeholder {
+    color: #dddddd;
+}
+
+/*formats the submit button on the contact form page*/
+input[type=submit] {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    padding: 7px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/*formats the profile picture on the about page*/
+#profilePicture {
+    float: left;
+    padding: 10px;
+}
+
+/*formats portfolio pictures*/
+.portfolio {
+    padding: 23px;
+    text-align: center;
+}
+
+/*formats the portfolio <a> tags containing the images and headers*/
+#hangman, #rpggame, #triviagame, #widget, #rockpaperscissors {
+    position: relative;
+}
+
+/*formats the headers for the portfolio images/links*/
+#hangmanHead, #rpggameHead, #triviagameHead, #widgetHead, #rockpaperscissorsHead {
+    position: absolute;
+    bottom: 35px;
+    left: 23px;
+    width: 180px;
+    padding: 10px;
+    z-index: 2;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-weight: bold;
+}
+
+/*contains social media links to gitHug, LinkedIn, and Stack Overflow*/
+.connectContent {
+    color: #4aaaa5;
+    background-color: #ffffff;
+    width: 170px;
+    float: left;
+    padding: 20px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dddddd;
+    font-size: 15pt;
+    text-align: center;
+}
+
+/*sets icon dimensions*/
+.icon {
+    width: 50px;
+    height: 50px;
+}
+
+/*colored bar above the footer*/
+.preFooter {
+    background-color: #4aaaa5;
+    width: 100%;
+    height: 5px;
+    clear: both;
+    position: absolute;
+    top: -5px;
+}
+
+/*in the bar at the bottom of the screen*/
+.footer {
+    background-color: #666666;
+    color: white;
+    clear: both;
+    text-align: center;
+    font-size: 7pt;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    z-index: 10;
+}
+
+/*sets default text style and background image*/
+body {
+    color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background-image: url("../images/sakura.png");
+    width: 100%;
+}
+
+/*sets header text style*/
+h2 {
+    color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+/*sets header text style*/
+h3 {
+    color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-weight: bold;
+}
+
+/*changes the color of the horizontal rule*/
+hr {
+    border-top: 2px solid #dddddd;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*sets paragraph padding*/
+p {
+    padding: 5px;
+}
+
+/*formats links*/
+a:link {
+    color: #777777;
+    text-decoration: none;
+}
+a:visited {
+    color: #4aaaa5;
+    text-decoration: none;
+}
+a:hover {
+    color: mistyrose;
+    text-decoration: none;
+}
+
+@media screen and (max-width:980px) {
+    /*sections are smaller, photo is enlarged*/
+    #profilePicture {
+        width: 100%;
+        height: auto;
+        padding: 20px 0 20px 0;
+    }
+
+    /*images scale to the size of the container (mainContent)*/
+    #hangman, #rpggame, #triviagame, #widget, #rockpaperscissors, .portfolio {
+        width: 100%;
+        height: auto;
+        padding: 20px 0 0 0;
+        float: left;
+    }
+    /*portfolio image headers scale to container size*/
+    /*sections take up entire screen*/
+    .innerHeader {
+        margin-left: 100px;
+        padding-top: 20px;
+    }
+    .aboutHeader {
+        margin-left: 27%;
+        padding-top: 5px;
+    }
+    .portfolioHeader {
+        padding-top: 5px;
+    }
+    .contactHeader {
+        padding-top: 5px;
+    }
+    #hangmanHead, #rpggameHead, #triviagameHead, #widgetHead, #rockpaperscissorsHead {
+        width: 100%;
+        margin: 0;
+        left: 0;
+        bottom: 5%;
+    }
+    .mainContent {
+        box-sizing: border-box;
+        width: 48%;
+        max-width: 700px;
+    }
+    .connectContent {
+        box-sizing: border-box;
+        width: 22%;
+        text-align: left;
+        min-width: 230px;
+    }
+}
+
+/*sets style for viewport of 768px and below (down to 640px)*/
+@media screen and (max-width:768px) {
+    /*sections take up entire screen*/
+    .mainHeader {
+        width: 100%;
+    }
+    .innerHeader {
+        margin-left: 20px;
+        padding-top: 20px;
+    }
+    .aboutHeader {
+        margin-left: 27%;
+        padding-top: 5px;
+    }
+    .portfolioHeader {
+        padding-top: 5px;
+    }
+    .contactHeader {
+        padding-top: 5px;
+    }
+
+    #profilePicture {
+        box-sizing: border-box;
+        width: 50%;
+        height: auto;
+        padding: 20px 20px 20px 0;
+    }
+    /*images scale to the size of the container (mainContent)*/
+    #hangman, #rpggame, #triviagame, #widget, #rockpaperscissors, .portfolio {
+        height: auto;
+        padding: 20px 0 20px 0;
+        float: left;
+    }
+    #hangman, #rpggame, #triviagame, #widget, #rockpaperscissors {
+        box-sizing: border-box;
+        width: 50%;
+        padding: 20px 10px 0 20px;
+    }
+    .portfolio {
+        width: 100%;
+    }
+    /*portfolio image headers scale to container size*/
+    #hangmanHead, #rpggameHead, #triviagameHead, #widgetHead, #rockpaperscissorsHead {
+        width: 100%;
+        margin: 0;
+        left: 20px;
+        bottom: 10%;
+    }
+
+    .mainContent {
+        width: 90%;
+        max-width: 700px;
+        margin: 30px;
+        box-sizing: border-box;
+    }
+    .connectContent {
+        width: 90%;
+        max-width: 730px;
+        margin: 30px 20px 80px 20px;
+        text-align: left;
+        min-width: 230px;
+    }
+}
+
+/*sets styling for viewport of 640px or smaller*/
+@media screen and (max-width:640px) {
+    /*section take up entire  width of the screen*/
+    .innerHeader {
+        width: 100%;
+        box-sizing: border-box;
+        padding-bottom: 50px;
+        margin: 0;
+    }
+
+    /*sections takes up 1/3 of the width of the screen*/
+    .aboutHeader {
+        box-sizing: border-box;
+        width: 33.3%;
+        float: left;
+        text-align: center;
+        padding: 20px 0 20px 0;
+        margin: 0;
+    }
+    .portfolioHeader {
+        box-sizing: border-box;
+        width: 33.3%;
+        float: left;
+        text-align: center;
+        padding: 20px 0 20px 0;
+        margin: 0;
+    }
+    .contactHeader {
+        box-sizing: border-box;
+        width: 33.3%;
+        float: left;
+        text-align: center;
+        padding: 20px 0 20px 0;
+        margin: 0;
+    }
+
+    /*picture scales to the size of its container (mainContent)*/
+    #profilePicture {
+        width: 100%;
+        height: auto;
+        padding: 20px 0 20px 0;
+    }
+
+    /*images scale to the size of the container (mainContent)*/
+    #hangman, #rpggame, #triviagame, #widget, #rockpaperscissors, .portfolio {
+        width: 100%;
+        height: auto;
+        padding: 20px 0 0 0;
+        float: left;
+    }
+    /*portfolio image headers scale to container size*/
+    #hangmanHead, #rpggameHead, #triviagameHead, #widgetHead, #rockpaperscissorsHead {
+        width: 100%;
+        margin: 0;
+        left: 0;
+        bottom: 5%;
+    }
+
+    /*content width modified for 640px viewport*/
+    .mainContent {
+        width: 100%;
+        max-width: 550px;
+        margin: 20px;
+    }
+    .connectContent {
+        width: 100%;
+        max-width: 600px;
+        margin: 20px 20px 80px 20px;
+        text-align: left;
+        min-width: 230px;
+    }
+
+    /*footer maintains full width*/
+    .preFooter {
+        width: 100%;
+    }
+    .footer {
+        width: 100%;
+    }
+}
