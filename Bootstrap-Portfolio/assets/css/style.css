@@ -14,9 +14,18 @@
     border-color: #cccccc;
     border-width: 1px;
     margin-bottom: 20px;
-    padding-left: 0;
+    padding: 5px;
 }
 
+.nav>li>a {
+    margin-right: 50px;
+    padding-left: 50px;
+}
+#navigation {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+}
 /*space containing name has a minimum width and a color change*/
 .navbar-brand {
     min-width: 200px;

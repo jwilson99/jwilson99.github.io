@@ -61,7 +61,7 @@
     border-style: solid;
     border-color: #dddddd;
     border-width: 1px;
-    width: 500px;
+    width: 60%;
     float: left;
     padding: 20px;
     margin-left: 100px;
@@ -102,7 +102,8 @@ input[type=submit] {
 /*formats the profile picture on the about page*/
 #profilePicture {
     float: left;
-    padding: 10px;
+    padding: 20px;
+    width: 60%;
 }
 
 /*formats portfolio pictures*/
@@ -144,6 +145,7 @@ input[type=submit] {
     border-color: #dddddd;
     font-size: 15pt;
     text-align: center;
+    width: 20%;
     min-width: 230px;
 }
 
