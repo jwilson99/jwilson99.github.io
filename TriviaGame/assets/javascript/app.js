@@ -9,7 +9,7 @@ var questions = [
         "answer":"Jupiter",
         "number":"1/13",
         "fact":"Father of pretty much the entirety of Rome by now. (Like seriously... try to tone it down, Jupiter)",
-        "image":'assets/images/jupiter.jpg'
+        "image":'assets/images/jupiter.JPG'
     },
 
     {
@@ -54,7 +54,7 @@ var questions = [
         "answer":"Mars",
         "number":"6/13",
         "fact":"Also Venus's lover. Hmm... Maybe there's a reason Cupid and Aeneas are so different...",
-        "image":'assets/images/mars.jpg'
+        "image":'assets/images/mars.JPG'
     },
 
     {
