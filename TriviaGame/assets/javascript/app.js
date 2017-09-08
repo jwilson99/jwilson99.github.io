@@ -89,7 +89,7 @@ var questions = [
         "choices":["Maia","Bacchus","Uranus","Janus"],
         "answer":"Bacchus",
         "number":"10/13",
-        "fact":"His mother was mortal and his father was Zeus (surprise surprise). Jupiter gave birth to him from his leg... I can see why he drinks.",
+        "fact":"His mother was mortal and his father was Jupiter (surprise surprise). Jupiter gave birth to him from his leg... I can see why he drinks.",
         "image":'assets/images/bacchus.jpg'
     },
 
