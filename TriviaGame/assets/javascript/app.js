@@ -94,7 +94,7 @@ var questions = [
     },
 
     {
-        "question":"Goddess and protector of women",
+        "question":"Goddess of fertility and protector of women",
         "choices":["Venus","Ceres","Juno","Diana"],
         "answer":"Juno",
         "number":"11/13",
@@ -181,7 +181,7 @@ function start() {
 
 //function is run when an answer button is pressed
 function userAnswer () {
-    //timer is st[opped
+    //timer is stopped
     stop();
     //checks if the answer is true or false
     if ($(this).text() === questions[questionNumber].answer) {
@@ -214,6 +214,8 @@ function questionEnd() {
     if (answerCorrect === true) {
         //screen shows use was correct
         $("#questionNumber").html("<h1>Correct!</h1>");
+        //reset answerFact
+        answerFact = "The correct answer was " + questions[questionNumber].answer + "." + "<br>" + "<img src=" + questions[questionNumber].image + ">" + "<br>" + questions[questionNumber].fact;
         //screen shows the correct answer
         $("#question").html(answerFact);
         //runs a function that shows the next question and restarts timer
@@ -222,6 +224,8 @@ function questionEnd() {
     else {
         //screen shows use was wrong
         $("#questionNumber").html("<h1>Wrong!</h1>");
+        //reset answerFact
+        answerFact = "The correct answer was " + questions[questionNumber].answer + "." + "<br>" + "<img src=" + questions[questionNumber].image + ">" + "<br>" + questions[questionNumber].fact;
         //screen shows the correct answer
         $("#question").html(answerFact);
         //runs a function that shows the next question and restarts timer
@@ -316,4 +320,6 @@ function reset() {
     $("#questionNumber").html("<h1>Roman Gods and Goddesses Quiz</h1>");
     //shows what the correct answer was
     $("#question").html("In this quiz, tell us the name of the described Roman God or Goddess based on the given description.<br><br>Watch your time though; you have only a limited time for each question!");
+    //resets correct answer
+    answerCorrect = null;
 }
